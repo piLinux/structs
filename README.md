@@ -1,22 +1,33 @@
-# Archived project. No maintenance. 
+#### Note: Forked and now under maintenance
 
-This project is not maintained anymore and is archived. Feel free to fork and
-make your own changes if needed. For more detail read my blog post: [Taking an indefinite sabbatical from my projects](https://arslan.io/2018/10/09/taking-an-indefinite-sabbatical-from-my-projects/)
+## Updates
+
+v1.1.1 [Jan 01 - 2022]
+
+- Initial release after fork
+
+### Final words of the original creator
+
+~~ # Archived project. No maintenance. ~~
+
+~~ This project is not maintained anymore and is archived. ~~
+Feel free to fork and make your own changes if needed.
+For more detail read my blog post: [Taking an indefinite sabbatical from my projects][01]
 
 Thanks to everyone for their valuable feedback and contributions.
 
-# Structs [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](http://godoc.org/github.com/fatih/structs) [![Build Status](http://img.shields.io/travis/fatih/structs.svg?style=flat-square)](https://travis-ci.org/fatih/structs) [![Coverage Status](http://img.shields.io/coveralls/fatih/structs.svg?style=flat-square)](https://coveralls.io/r/fatih/structs)
+# Structs [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg)][02] [![Build Status](https://app.travis-ci.com/piLinux/structs.svg?branch=master)][03] [![Coverage Status](https://coveralls.io/repos/github/piLinux/structs/badge.svg?branch=master)][04]
 
 Structs contains various utilities to work with Go (Golang) structs. It was
 initially used by me to convert a struct into a `map[string]interface{}`. With
-time I've added other utilities for structs.  It's basically a high level
+time I've added other utilities for structs. It's basically a high level
 package based on primitives from the reflect package. Feel free to add new
 functions or improve the existing code.
 
 ## Install
 
 ```bash
-go get github.com/fatih/structs
+go get github.com/pilinux/structs
 ```
 
 ## Usage and Examples
@@ -97,7 +108,6 @@ z := s.IsZero()           // Check if all fields are uninitialized
 We can easily examine a single Field for more detail. Below you can see how we
 get and interact with various field methods:
 
-
 ```go
 s := structs.New(server)
 
@@ -162,9 +172,15 @@ for _, f := range s.Fields() {
 
 ## Credits
 
- * [Fatih Arslan](https://github.com/fatih)
- * [Cihangir Savas](https://github.com/cihangir)
+- [Fatih Arslan](https://github.com/fatih)
+- [Cihangir Savas](https://github.com/cihangir)
 
 ## License
 
-The MIT License (MIT) - see LICENSE.md for more details
+The MIT License (MIT) - see [LICENSE.md][05] for more details
+
+[01]: https://arslan.io/2018/10/09/taking-an-indefinite-sabbatical-from-my-projects/
+[02]: https://pkg.go.dev/github.com/pilinux/structs
+[03]: https://app.travis-ci.com/piLinux/structs
+[04]: https://coveralls.io/github/piLinux/structs?branch=master
+[05]: LICENSE.md
